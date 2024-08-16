@@ -46,9 +46,9 @@ export function Projects() {
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="bottom-bottom"
-        className="flex flex-wrap items-center justify-center gap-4 mt-10"
+        className="flex flex-wrap items-center justify-center grow gap-4"
       >
-        <BackgroundGradient className=" flex w-96 flex-col gap-2 p-4 group rounded-[22px] max-w-sm h-[35rem]  bg-slate-700">
+        <BackgroundGradient className=" flex w-80 sm:w-96 flex-col gap-2 p-4 group rounded-[22px] max-w-sm h-[35rem]  bg-slate-700">
           <Image
             src="/sd.png"
             alt="Project Management System"
@@ -56,7 +56,7 @@ export function Projects() {
             width={400}
             className="card-img transition-all duration-500"
           />
-          <p className="text-base sm:text-2xl mt-4 mb-2 text-neutral-200">
+          <p className="text-base sm:text-[20px] mt-4 mb-2 text-neutral-200">
             Project Management System
           </p>
 
@@ -78,7 +78,7 @@ export function Projects() {
 
         {/* am */}
 
-        <BackgroundGradient className="gap-2 flex w-96 flex-col p-4 group rounded-[22px] max-w-sm h-[35rem]  bg-slate-700">
+        <BackgroundGradient className="gap-2 flex w-80 sm:w-96 flex-col p-4 group rounded-[22px] max-w-sm h-[35rem]  bg-slate-700">
           <Image
             src="/nk.png"
             alt="Nakon: Anonymous Q&A Platform"
@@ -86,17 +86,18 @@ export function Projects() {
             width={400}
             className="card-img transition-all duration-500"
           />
-          <p className="text-base sm:text-2xl mt-4 mb-2 text-neutral-200">
+          <p className="text-base sm:text-[20px] mt-4 mb-2 text-neutral-200">
             Nakon : Anonymous Q&A Platform
           </p>
 
-          <p className="text-sm text-justify text-slate-500">
+          <p className="text-sm text-justify basis-1 grow-0 text-slate-500">
             A platform that allows users to ask questions and provide answers
             without revealing their identity.
           </p>
-          <div className="flex gap-2 mt-8">
+          <div className="flex gap-2 mt-8 flex-wrap">
             <img src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
             <img src="https://svgl-badge.vercel.app/api/Framework/Laravel?theme=dark" />
+            <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
           </div>
 
           <Button className="mt-3 ">
@@ -106,7 +107,7 @@ export function Projects() {
           </Button>
         </BackgroundGradient>
 
-        <BackgroundGradient className="gap-2 flex w-96 flex-col p-4 group rounded-[22px] max-w-sm h-[35rem]  bg-slate-700">
+        <BackgroundGradient className="gap-2 flex w-80 sm:w-96 flex-col p-4 group rounded-[22px] max-w-sm h-[35rem]  bg-slate-700">
           <Image
             src="/cr.png"
             alt=""
@@ -114,16 +115,17 @@ export function Projects() {
             width={400}
             className="card-img transition-all duration-500"
           />
-          <p className="text-base sm:text-2xl mt-4 mb-2 text-neutral-200">
+          <p className="text-base sm:text-[20px] mt-4 mb-2 text-neutral-200">
             Cryptarithm Solver
           </p>
 
-          <p className="text-sm text-justify text-slate-500">
+          <p className="text-sm text-justify text-slate-500 ">
             A platform that allows users to solve cryptarithm puzzles, This app is built using React and JavaScript and is hosted on Vercel.
           </p>
-          <div className="flex gap-2 mt-8">
+          <div className="flex gap-2 mt-8 flex-wrap">
             <img src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
             <img src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
+            <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
           </div>
 
           <Button className="mt-3 ">
@@ -133,7 +135,7 @@ export function Projects() {
           </Button>
         </BackgroundGradient>
 
-        <BackgroundGradient className="gap-2 flex w-96 flex-col p-4 group rounded-[22px] max-w-sm h-[35rem]  bg-slate-700">
+        <BackgroundGradient className="gap-2 flex w-80 sm:w-96 flex-col p-4 group rounded-[22px] max-w-sm h-[35rem]  bg-slate-700">
           <Image
             src="/an.png"
             alt=""
@@ -141,16 +143,17 @@ export function Projects() {
             width={400}
             className="card-img transition-all duration-500"
           />
-          <p className="text-base sm:text-2xl mt-4 mb-2 text-neutral-200">
+          <p className="text-base sm:text-[20px] mt-4 mb-2 text-neutral-200">
             Anime Stream web app (WIP)
           </p>
 
           <p className="text-sm text-justify text-slate-500">
             A platform that allows users to watch anime, This app is built using React and JavaScript and is hosted on Vercel.
           </p>
-          <div className="flex gap-2 mt-8">
+          <div className="flex gap-2 mt-8 flex-wrap">
             <img src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
             <img src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
+            <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
           </div>
 
           <Button className="mt-3 ">

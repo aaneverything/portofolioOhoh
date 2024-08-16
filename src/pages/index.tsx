@@ -52,7 +52,7 @@ export default function Home() {
         data-aos-anchor-placement="bottom-bottom"
         className="flex flex-col justify-center items-center min-h-screen"
       >
-        <h1 className="text-slate-500 text-2xl font-mono text-center mb-4">
+        <h1 className="text-slate-500 text-lg sm:text-2xl font-mono text-center mb-4">
           Welcome to My Portfolio!
         </h1>
         <FlipWordsDemo />
