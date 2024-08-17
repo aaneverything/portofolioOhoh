@@ -66,7 +66,7 @@ export function Projects() {
             structures like Struct, Sorting, and Queue lore.
           </p>
           <div className="flex gap-2 mt-8">
-            <img src="https://svgl-badge.vercel.app/api/Language/C%2B%2B?theme=dark" />
+            <img alt='' src="https://svgl-badge.vercel.app/api/Language/C%2B%2B?theme=dark" />
           </div>
 
           <Button className="mt-3">
@@ -95,9 +95,9 @@ export function Projects() {
             without revealing their identity.
           </p>
           <div className="flex gap-2 mt-8 flex-wrap">
-            <img src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
-            <img src="https://svgl-badge.vercel.app/api/Framework/Laravel?theme=dark" />
-            <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
+            <img alt='' src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
+            <img alt='' src="https://svgl-badge.vercel.app/api/Framework/Laravel?theme=dark" />
+            <img alt='' src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
           </div>
 
           <Button className="mt-3 ">
@@ -123,9 +123,9 @@ export function Projects() {
             A platform that allows users to solve cryptarithm puzzles, This app is built using React and JavaScript and is hosted on Vercel.
           </p>
           <div className="flex gap-2 mt-8 flex-wrap">
-            <img src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
-            <img src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
-            <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
+            <img alt='' src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
+            <img alt='' src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
+            <img alt='' src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
           </div>
 
           <Button className="mt-3 ">
@@ -151,9 +151,9 @@ export function Projects() {
             A platform that allows users to watch anime, This app is built using React and JavaScript and is hosted on Vercel.
           </p>
           <div className="flex gap-2 mt-8 flex-wrap">
-            <img src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
-            <img src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
-            <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
+            <img alt='' src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
+            <img alt='' src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
+            <img alt='' src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
           </div>
 
           <Button className="mt-3 ">

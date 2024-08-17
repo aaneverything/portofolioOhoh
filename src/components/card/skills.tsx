@@ -42,27 +42,27 @@ export function Skills() {
         data-aos-anchor-placement="bottom-bottom"
         className="flex flex-wrap items-center justify-center gap-4 mt-16"
       >
-        <img src="https://svgl-badge.vercel.app/api/Language/HTML5?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Language/CSS?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Language/TypeScript?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Language/C%2B%2B?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Language/HTML5?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Language/CSS?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Language/TypeScript?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Language/C%2B%2B?theme=dark" />
 
-        <img src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Library/shadcnui?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Framework/Laravel?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Language/Php?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Database/MySQL?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Software/Git?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Software/Postman?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Design/Figma?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Hosting/Vercel?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Software/Stack%20Overflow?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Library/shadcnui?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Framework/Laravel?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Language/Php?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Database/MySQL?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Software/Git?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Software/Postman?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Design/Figma?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Hosting/Vercel?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Software/Stack%20Overflow?theme=dark" />
       </div>
       <div data-aos="fade-up" className="mt-8 flex justify-center">
-        <img
+        <img 
           className="hidden lg:block border border-stone-800 rounded-lg"
           src="https://github-readme-stats.vercel.app/api/top-langs?username=aaneverything&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=171717&card_width=800"
           alt="Top Languages"

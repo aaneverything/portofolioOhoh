@@ -11,7 +11,7 @@ export function FlipWordsDemo() {
 
   return (
     <div className="h-44 flex flex-col text-md sm:text-4xl font-mono  text-white justify-center items-center px-4">
-    hallo i'm Aan Triya Vinanta
+    hallo i`m Aan Triya Vinanta
       <div className="mx-auto text-lg sm:text-4xl font-mono text-white">
         <FlipWords words={words} duration={5000} /> <br />
       </div>
