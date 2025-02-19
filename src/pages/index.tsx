@@ -8,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Skills } from "@/components/card/skills";
 import { Projects } from "@/components/card/projects";
+import { Project2 } from "@/components/card/project2";
 import Image from "next/image";
 import { AppleCardsCarouselDemo } from "@/components/card/AppleCardsCarouselDemo";
 import { FlipWordsDemo } from "@/components/card/text";
@@ -64,7 +65,7 @@ export default function Home() {
       {/* bagian skill end*/}
 
       {/* bagian project start */}
-      <Projects />
+      <Project2 />
       {/* bagian project end */}
 
       <Contact />
