@@ -78,4 +78,13 @@
   .card-link {
     @apply flex justify-between border border-slate-800 group-hover:border-teal-500 flex-wrap px-4 py-3 overflow-clip bg-teal-200 bg-opacity-10 hover:bg-opacity-25 transition-all duration-500 rounded-xl mx-4 cursor-pointer;
   }
+
+  /* Custom styles for project cards */
+  .force-white {
+    color: white !important;
+  }
+
+  .card-body {
+    min-height: 400px;
+  }
 }

@@ -42,12 +42,10 @@ export function Skills() {
         data-aos-anchor-placement="bottom-bottom"
         className="flex flex-wrap items-center justify-center gap-4 mt-16"
       >
-        <img alt='' src="https://svgl-badge.vercel.app/api/Language/HTML5?theme=dark" />
-        <img alt='' src="https://svgl-badge.vercel.app/api/Language/CSS?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Language/Kotlin?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Language/Dart?theme=dark" />
         <img alt='' src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
-        <img alt='' src="https://svgl-badge.vercel.app/api/Language/TypeScript?theme=dark" />
         <img alt='' src="https://svgl-badge.vercel.app/api/Language/C%2B%2B?theme=dark" />
-
         <img alt='' src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
         <img alt='' src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=dark" />
         <img alt='' src="https://svgl-badge.vercel.app/api/Library/shadcnui?theme=dark" />
@@ -55,11 +53,11 @@ export function Skills() {
         <img alt='' src="https://svgl-badge.vercel.app/api/Framework/Laravel?theme=dark" />
         <img alt='' src="https://svgl-badge.vercel.app/api/Language/Php?theme=dark" />
         <img alt='' src="https://svgl-badge.vercel.app/api/Database/MySQL?theme=dark" />
+        <img alt='' src="https://svgl-badge.vercel.app/api/Database/PostgreSQL?theme=dark" />
         <img alt='' src="https://svgl-badge.vercel.app/api/Software/Git?theme=dark" />
         <img alt='' src="https://svgl-badge.vercel.app/api/Software/Postman?theme=dark" />
         <img alt='' src="https://svgl-badge.vercel.app/api/Design/Figma?theme=dark" />
         <img alt='' src="https://svgl-badge.vercel.app/api/Hosting/Vercel?theme=dark" />
-        <img alt='' src="https://svgl-badge.vercel.app/api/Software/Stack%20Overflow?theme=dark" />
       </div>
       <div data-aos="fade-up" className="mt-8 flex justify-center">
         <img 

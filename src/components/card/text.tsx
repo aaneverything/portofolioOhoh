@@ -5,8 +5,9 @@ import "aos/dist/aos.css";
 export function FlipWordsDemo() {
   const words = [
     "Frontend Developer",
-    "UI/UX Designer",
-    "Android Developer(wannabe)",
+    "Mobile Developer",
+    "Fullstack Developer",
+    "Android Developer",
   ];
 
   return (
