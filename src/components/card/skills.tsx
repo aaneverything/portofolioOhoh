@@ -1,26 +1,4 @@
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 export function Skills() {
-  const [reachBottom, setReachBottom] = useState(false);
-
-  useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-    AOS.refresh();
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-
-    setReachBottom(true);
-  };
-
   return (
     <div
       data-aos="fade-up"

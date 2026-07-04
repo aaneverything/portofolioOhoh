@@ -24,73 +24,57 @@ export type Project = {
 export const projectsData: Project[] = [
   {
     id: 1,
-    title: "SweetLifeApp",
-    role: "Mobile Developer",
-    duration: "2024",
-    description: "AI-Powered Wellness & Diabetes-Friendly Lifestyle Companion.",
-    link: "https://github.com/SweetLife-Core/SweetLifeApp",
-    techStack: ["Kotlin", "Android Studio", "Golang", "PostgreSQL"],
-    bgImage: "bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800"
-  },
-  {
-    id: 2,
-    title: "roastyourgram",
-    role: "Fullstack Developer",
+    title: "Justisia — Indonesian Legal AI Chatbot",
+    role: "AI Engineer (Final Thesis)",
     duration: "2025",
-    description: "A social media platform for coffee enthusiasts to share their favorite brews, cafes, and brewing techniques.",
-    link: "https://roastyourgram.vercel.app",
-    techStack: ["React", "Javascript", "Node.js"],
-    bgImage: "bg-gradient-to-br from-green-600 via-teal-600 to-green-800"
-  },
-  {
-    id: 3,
-    title: "Resepku",
-    role: "Fullstack Developer", 
-    duration: "2025",
-    description: "A modern recipe sharing and management platform built with Next.js 13+ App Router and JavaScript. Share your favorite recipes, discover new dishes, and manage your cooking collection with ease.",
-    link: "https://resepku.tech",
-    techStack: ["Next.js", "Tailwind CSS", "Prisma", "PostgreSQL", "Zod"],
-    bgImage: "bg-gradient-to-br from-red-600 via-pink-600 to-red-800"
-  },
-  {
-    id: 4,
-    title: "SeeSawith",
-    role: "Mobile Developer",
-    duration: "2025",
-    description: "SeeSawith is a cutting-edge Flutter application designed to predict diseases in oil palm leaf trees 🌴 by simply scanning the leaf. Empower farmers and researchers with instant insights to protect crops and ensure sustainable agriculture.",
-    link: "https://github.com/aaneverything/seesawithMobile",
-    techStack: ["Flutter", "Dart"],
-    bgImage: "bg-gradient-to-br from-yellow-600 via-orange-600 to-yellow-800"
-  },
-  {
-    id: 5,
-    title: "WeatherApp",
-    role: "Mobile Developer",
-    duration: "2024",
-    description: "A modern and responsive weather application providing real-time weather updates, forecasts, and alerts. Built with a focus on user experience and performance.",
-    link: "https://github.com/aaneverything/weatherApp",
-    techStack: ["Kotlin", "Android Studio"],
+    description:
+      "AI legal chatbot using Retrieval-Augmented Generation (RAG) to answer questions grounded in Indonesian laws and regulations. Built the ingestion pipeline, semantic search, and vector indexing, with hybrid retrieval and reranking for factual consistency.",
+    link: "#",
+    techStack: ["Python", "LangChain", "Qdrant", "Google Gemini", "Sentence Transformers"],
     bgImage: "bg-gradient-to-br from-indigo-600 via-blue-600 to-indigo-800"
   },
   {
-    id: 6,
-    title: "Mobile Banking App",
+    id: 2,
+    title: "EV Charging Management System",
+    role: "Frontend Developer",
+    duration: "2025",
+    description:
+      "Real-time EV charging platform for monitoring sessions and station activity. Built responsive user/admin dashboards over REST + WebSocket (OCPP) with live status, QR station access, OTP auth, and payment integration.",
+    link: "#",
+    techStack: ["Next.js", "React", "Tailwind CSS", "Laravel", "PostgreSQL", "WebSocket"],
+    bgImage: "bg-gradient-to-br from-emerald-600 via-green-600 to-emerald-800"
+  },
+  {
+    id: 3,
+    title: "ASAP Monitor — IoT Real-Time Dashboard",
+    role: "Full Stack Developer",
+    duration: "2025",
+    description:
+      "Real-time IoT dashboard visualizing environmental and water-quality sensor data from ESP32 devices. Live charts, gauges, and actuator control over Socket.IO, on a Dockerized architecture connecting devices, backend, and frontend.",
+    link: "#",
+    techStack: ["Next.js", "Node.js", "Socket.IO", "PostgreSQL", "Redis", "Docker", "ESP32"],
+    bgImage: "bg-gradient-to-br from-cyan-600 via-blue-600 to-cyan-800"
+  },
+  {
+    id: 4,
+    title: "SweetLife — AI Wellness Companion",
     role: "Mobile Developer",
-    duration: "2023",
-    description: "A secure mobile banking application with features like account management, money transfers, bill payments, and transaction history. Implements biometric authentication and follows banking security standards.",
-    link: "https://github.com/aaneverything/mobile-banking",
-    techStack: ["React Native", "Firebase", "Redux", "Expo"],
+    duration: "2024",
+    description:
+      "AI-powered wellness app delivering personalized, diabetes-friendly lifestyle recommendations. Focused on accessible, engaging UI built with a cross-functional team.",
+    link: "https://github.com/SweetLife-Core/SweetLifeApp",
+    techStack: ["Kotlin", "Android Studio", "Golang", "PostgreSQL"],
     bgImage: "bg-gradient-to-br from-purple-600 via-pink-600 to-purple-800"
   },
-  // 📝 Template untuk menambah project baru:
-  // {
-  //   id: 7,
-  //   title: "Nama Project Anda",
-  //   role: "Posisi/Role Anda",
-  //   duration: "Tahun/Periode",
-  //   description: "Deskripsi lengkap project Anda. Jelaskan fitur-fitur utama, teknologi yang digunakan, dan masalah yang diselesaikan.",
-  //   link: "https://github.com/username/project-name",
-  //   techStack: ["Tech1", "Tech2", "Tech3", "Tech4"],
-  //   bgImage: "bg-gradient-to-br from-cyan-600 via-blue-600 to-cyan-800"
-  // },
+  {
+    id: 5,
+    title: "Resepku — Recipe Discovery Platform",
+    role: "Frontend Developer",
+    duration: "2025",
+    description:
+      "Modern recipe platform supporting text and image-based discovery. Responsive, component-based UI with search and dynamic content over REST APIs.",
+    link: "https://resepku.tech",
+    techStack: ["Next.js", "React", "Prisma", "PostgreSQL"],
+    bgImage: "bg-gradient-to-br from-red-600 via-pink-600 to-red-800"
+  },
 ];

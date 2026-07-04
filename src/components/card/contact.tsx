@@ -1,25 +1,4 @@
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 export function Contact() {
-  const [reachBottom, setReachBottom] = useState(false);
-
-  useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-    AOS.refresh();
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-
-    setReachBottom(true);
-  };
   return (
     <div
       className="container flex flex-col min-h-screen overflow-y-hidden mb-40"

@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { projectsData, type Project } from "@/data/projects";
+import { useState } from "react";
+import { projectsData } from "@/data/projects";
 
 const ProjectCard = ({
   title,
@@ -24,8 +22,6 @@ const ProjectCard = ({
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const trimmedText = description ? `${description.slice(0, 100)}...` : "";
-  
   return (
     <>
       <li
@@ -37,8 +33,8 @@ const ProjectCard = ({
         <div className="absolute inset-0 bg-black opacity-70 lg:opacity-45 rounded-3xl max-lg:rounded-xl" />
 
         {/* Card Body */}
-        <div className="card-body relative flex flex-col w-full justify-between items-start z-10 h-full p-6 max-lg:p-4 text-white">
-          <div className="flex w-full justify-between items-stretch">
+        <div className="card-body relative flex flex-col w-full z-10 h-full p-6 max-lg:p-4 text-white gap-3">
+          <div className="flex w-full justify-between items-start">
             <h2 className="max-lg:text-[14px] text-[20px] text-white">
               {role}
             </h2>
@@ -47,51 +43,46 @@ const ProjectCard = ({
             </p>
           </div>
 
-          {/* Project Details */}
-          <div className="flex w-full flex-col justify-start items-start text-[14px]">
-            <div className="flex max-lg:flex-col max-lg:justify-start max-lg:items-start justify-between w-full items-center gap-4">
-              <p className="max-lg:text-[18px] force-white text-[24px] mb-2 font-semibold max-lg:-mb-4">
-                {title}
-              </p>
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="max-lg:text-[12px] max-lg:mt-2 text-end px-4 py-1 mb-2 border border-white hover:border-black hover:text-black hover:bg-white duration-150 transition-all rounded"
+          {/* Title — fixed height so every card lines up */}
+          <h3 className="force-white font-semibold text-[20px] lg:text-[24px] leading-snug line-clamp-2 min-h-[3.5rem] lg:min-h-[4rem]">
+            {title}
+          </h3>
+
+          {/* Description — flex-1 pushes the footer to the bottom */}
+          <p className="text-justify force-white text-[14px] flex-1 line-clamp-4 [text-shadow:_0_1px_0_rgb(0_0_0_/_90%)]">
+            {description || "No description available"}
+          </p>
+          {description && description.length > 220 && (
+            <button
+              className="self-start -mt-1 text-yellow-500 text-[13px] font-medium underline"
+              onClick={() => setIsModalOpen(true)}
+            >
+              Read more
+            </button>
+          )}
+
+          <hr className="w-full h-[0.5px] bg-white my-2" />
+
+          {/* Tech Stack */}
+          <div className="flex w-full flex-wrap justify-start items-start gap-2">
+            {techStack.map((tech) => (
+              <div
+                key={tech}
+                className="flex text-[10px] lg:text-[14px] bg-white bg-opacity-35 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] justify-start items-center gap-1 border border-white px-3 py-[2px] rounded"
               >
-                View Project
-              </a>
-            </div>
-
-            <p className="text-justify block lg:hidden [text-shadow:_0_1px_0_rgb(0_0_0_/_90%)]">
-              {trimmedText}{" "}
-              {description && description.length > 100 && (
-                <button
-                  className="text-yellow-500 font-medium underline"
-                  onClick={() => setIsModalOpen(true)}
-                >
-                  Read more
-                </button>
-              )}
-            </p>
-            <p className="text-justify force-white hidden lg:block [text-shadow:_0_1px_0_rgb(0_0_0_/_90%)]">
-              {description || "No description available"}
-            </p>
-
-            <hr className="w-full h-[0.5px] bg-white my-4" />
-
-            {/* Tech Stack */}
-            <div className="flex w-full flex-wrap justify-start items-start gap-2">
-              {techStack.map((tech, techIndex) => (
-                <div
-                  key={techIndex}
-                  className="flex text-[10px] lg:text-[16px] bg-white bg-opacity-35 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] justify-start items-center gap-1 border border-white px-3 py-[2px] rounded"
-                >
-                  <p className="force-white">{tech}</p>
-                </div>
-              ))}
-            </div>
+                <p className="force-white">{tech}</p>
+              </div>
+            ))}
           </div>
+
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="self-start mt-1 text-[13px] lg:text-[14px] px-4 py-1 border border-white hover:border-black hover:text-black hover:bg-white duration-150 transition-all rounded"
+          >
+            View Project
+          </a>
         </div>
       </li>
 
@@ -116,13 +107,6 @@ const ProjectCard = ({
 };
 
 export function Project2() {
-  useEffect(() => {
-    // Inisialisasi AOS
-    AOS.init({ once: true });
-    AOS.refresh();
-  }, []);
-
-  // Menggunakan data dari file terpisah
   const projects = projectsData;
 
   return (
