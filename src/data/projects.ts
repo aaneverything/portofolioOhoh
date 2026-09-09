@@ -69,7 +69,7 @@ export const projectsData: Project[] = [
     duration: "2026",
     description:
       "Real-time EV charging platform for monitoring sessions and station activity. Built responsive user/admin dashboards over REST + WebSocket (OCPP) with live status, QR station access, OTP auth, and payment integration.",
-    link: "qrem.app",
+    link: "https://qrem.app",
     techStack: [
       "Next.js",
       "React",
@@ -79,7 +79,7 @@ export const projectsData: Project[] = [
       "WebSocket",
     ],
     bgImage: "bg-gradient-to-br from-emerald-600 via-green-600 to-emerald-800",
-    image: "/qrem.png",
+    image: "qrem.png",
   },
   {
     id: 3,
@@ -88,7 +88,7 @@ export const projectsData: Project[] = [
     duration: "2026",
     description:
       "Real-time IoT dashboard visualizing environmental and water-quality sensor data from ESP32 devices. Live charts, gauges, and actuator control over Socket.IO, on a Dockerized architecture connecting devices, backend, and frontend.",
-    link: "smokefilter.my.id",
+    link: "https://smokefilter.my.id",
     techStack: [
       "Next.js",
       "Node.js",
@@ -118,7 +118,8 @@ export const projectsData: Project[] = [
     title: "Web Profile Desa Bukit Bakar",
     role: "Fullstack Developer",
     duration: "to be launched",
-    description: "",
+    description:
+      "Official village profile and public information portal for Desa Bukit Bakar. Features village statistics, news publication, public service info, and administrative announcements built on Golang and React.",
     link: "#",
     techStack: ["Golang", "React", "PostgreSQL"],
     bgImage: "bg-gradient-to-br from-red-600 via-pink-600 to-red-800",

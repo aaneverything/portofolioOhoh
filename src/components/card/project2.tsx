@@ -31,7 +31,10 @@ const ProjectCard = ({
       ? bgImage
       : null);
   // Auto-remove '/public' prefix if user typed '/public/image.png'
-  const imgUrl = rawImg ? rawImg.replace(/^\/public/, "") : null;
+  let imgUrl = rawImg ? rawImg.replace(/^\/public/, "") : null;
+  if (imgUrl && !imgUrl.startsWith("/") && !imgUrl.startsWith("http")) {
+    imgUrl = `/${imgUrl}`;
+  }
 
   return (
     <>
