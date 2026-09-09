@@ -9,6 +9,7 @@ const ProjectCard = ({
   link,
   techStack,
   bgImage,
+  image,
   index,
 }: {
   title: string;
@@ -18,16 +19,37 @@ const ProjectCard = ({
   link: string;
   techStack: string[];
   bgImage: string;
+  image?: string;
   index: number;
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Check if either 'image' or 'bgImage' contains an image URL/path
+  const rawImg =
+    image ||
+    (bgImage && (bgImage.startsWith("/") || bgImage.startsWith("http"))
+      ? bgImage
+      : null);
+  // Auto-remove '/public' prefix if user typed '/public/image.png'
+  const imgUrl = rawImg ? rawImg.replace(/^\/public/, "") : null;
 
   return (
     <>
       <li
         data-aos="fade-up"
         data-aos-delay={index * 100}
-        className={`card rounded-3xl max-lg:rounded-xl max-w-full grayscale hover:grayscale-0 transition-[filter] duration-300 ${bgImage} bg-center bg-no-repeat bg-cover group relative min-h-[400px]`}
+        style={
+          imgUrl
+            ? {
+                backgroundImage: `url("${imgUrl}")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }
+            : undefined
+        }
+        className={`card rounded-3xl max-lg:rounded-xl max-w-full grayscale hover:grayscale-0 transition-[filter] duration-300 ${
+          imgUrl ? "" : bgImage
+        } bg-center bg-no-repeat bg-cover group relative min-h-[400px]`}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black opacity-70 lg:opacity-45 rounded-3xl max-lg:rounded-xl" />
@@ -126,19 +148,22 @@ export function Project2() {
       </p>
 
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={project.id}
-            title={project.title}
-            role={project.role}
-            duration={project.duration}
-            description={project.description}
-            link={project.link}
-            techStack={project.techStack}
-            bgImage={project.bgImage}
-            index={index}
-          />
-        ))}
+        {projects
+          .map((project, index) => (
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              role={project.role}
+              duration={project.duration}
+              description={project.description}
+              link={project.link}
+              techStack={project.techStack}
+              bgImage={project.bgImage}
+              image={project.image}
+              index={index}
+            />
+          ))
+          .reverse()}
       </ul>
     </div>
   );

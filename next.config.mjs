@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    domains: ["images.unsplash.com", "svgl-badge.vercel.app"],
+    domains: ["images.unsplash.com", "svgl-badge.vercel.app", "/public"],
     remotePatterns: [
       {
         protocol: "https",
